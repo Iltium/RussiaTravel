@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>RussiaTravel</title>
+</head>
+
+<body>
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <p>Почта:</p>
+                <input placeholder="Введите Email" type="email" id="email" name="email" required>
+                <p>Имя пользователя:</p>
+                <input placeholder="Введите логин" type="text" id="username" name="username" required>
+                <p>Пароль:</p>
+                <input placeholder="Введите пароль" type="password" id="password" name="password" required>
+                <p class="priv__policy__p">
+                    <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                    <span>Вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
+                </p>
+                <button type="submit">Регистрация</button>
+                <p class="evoit"><span>Если у Вас есть аккаунт <a href="#" id="switchToLogin">Войти</a></span></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Войти -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content login__content">
+            <span class="close">&times;</span>
+            <h2>Войти</h2>
+            <form id="loginForm">
+                <p>Почта:</p>
+                <input placeholder="Введите Email" type="email" id="loginEmail" name="email" required>
+                <p>Пароль:</p>
+                <input placeholder="Введите пароль" type="password" id="loginPassword" name="password" required>
+                <button type="submit">Войти</button>
+                <div class="razdelitel">
+                    <a href="#" id="switchToRegister">Регистрация</a>
+                    <a href="#" id="openForgotPasswordModal">Забыл пароль</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Забыл пароль -->
+    <div id="forgotPasswordModal" class="modal">
+        <div class="modal-content login__content">
+            <span class="close">&times;</span>
+            <h2>Новый пароль</h2>
+            <form id="forgotPasswordForm">
+                <p>Почта:</p>
+                <input placeholder="Введите Email" type="email" id="forgotPasswordEmail" name="email" required>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="index.html">RUSSIA <br> TRAVEL</a>
+                </div>
+                <div class="header__function">
+                    <div class="header__menu">
+                        <menu class="menu">
+                            <ul>
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="page/us.html">О нас</a></li>
+                                <li><a href="https://www.aviasales.ru/?params=KUF1" target="_blank">Авиабилеты</a></li>
+                                <li><a
+                                        href="https://www.tutu.ru/poezda/mini/?utm_source=yandex&utm_medium=cpc&utm_campaign=mrkt_train_rzdTrf&utm_term=ржд%20купить%20билеты&yclid=18325329165334872063" target="_blank">Ж/Д
+                                        билеты</a></li>
+                                <li><a href="page/beatiful.html">Галерея</a></li>
+                                <li><a href="page/contact.html">Контакты</a></li>
+                            </ul>
+                        </menu>
+                    </div>
+                    <div class="header__auth">
+                        <button id="openRegisterModal">Авторизуйтесь</button>
+                    </div>
+                </div>
+            </div>
+            <section class="intro">
+                <div class="intro__con">
+                    <div class="intro__left">
+                        Visit <br>
+                        to <br>
+                        Russia
+                    </div>
+                    <div class="intro__right">
+                        <div class="slider__num" data-slide="1">01</div>
+                        <div class="slider__num active" data-slide="2">02</div>
+                        <div class="slider__num" data-slide="3">03</div>
+                    </div>
+                </div>
+                <div class="intro__slider">
+                    <div class="intro__poloska active__pol"></div>
+                    <div class="intro__poloska"></div>
+                    <div class="intro__poloska"></div>
+                </div>
+                <script async
+                    src="https://tp.media/content?currency=rub&trs=323036&shmarker=548446&show_hotels=true&powered_by=true&locale=ru&searchUrl=www.aviasales.ru%2Fsearch&primary_override=%2366808Fff&color_button=%23555555&color_icons=%2332a8dd&dark=%23262626&light=%23FFFFFF&secondary=%23828661&special=%23C4C4C400&color_focused=%2332a8dd&border_radius=20&plain=false&promo_id=7879&campaign_id=100"
+                    charset="utf-8"></script>
+            </section>
+        </div>
+    </header>
+
+    <section class="popular__tur" id="popular__tur">
+        <div class="container">
+            <div class="popular__content">
+                <div class="popular__subtitle">
+                    Получите незабываемые эмоции
+                </div>
+                <div class="popular__title">
+                    ПОПУЛЯРНЫЕ ТУРЫ
+                </div>
+                <div class="popular__cards">
+                    <div class="popular__card">
+                        <div class="popular__img">
+                            <a href="page/baikal.html"><img src="img/Tur/image 3.jpg" alt=""></a>
+                        </div>
+                        <div class="popular__text">
+                            <div class="card__subtitle">
+                                Тур №1
+                            </div>
+                            <div class="card__title">
+                                по Байкалу
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular__card">
+                        <div class="popular__img">
+                            <a href="page/altai.html"><img src="img/Tur/image 4.jpg" alt=""></a>
+                        </div>
+                        <div class="popular__text">
+                            <div class="card__subtitle">
+                                Тур №2
+                            </div>
+                            <div class="card__title">
+                                по Алтаю
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular__card">
+                        <div class="popular__img">
+                            <a href="page/kavkaz.html"><img src="img/Tur/image 5.jpg" alt=""></a>
+                        </div>
+                        <div class="popular__text">
+                            <div class="card__subtitle">
+                                Тур №3
+                            </div>
+                            <div class="card__title">
+                                по Кавказу
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="transing__video">
+        <div class="container">
+            <div class="trans__content">
+                <div class="trans__title">
+                    Путешествуйте и <br>
+                    Вдохновляйте свою жизнь
+                </div>
+            </div>
+        </div>   
+            <div class="trans__video">
+                <div class="tran__video">
+                    <iframe width="330" height="220" src="https://rutube.ru/play/embed/dab113f72f0eee43967b9c9e5a19643d"
+                        frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen
+                        allowFullScreen></iframe>
+                </div>
+                <div class="tran__video">
+                    <iframe width="330" height="220" src="https://rutube.ru/play/embed/dab113f72f0eee43967b9c9e5a19643d"
+                        frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen
+                        allowFullScreen></iframe>
+                </div>
+                <div class="tran__video">
+                    <iframe width="330" height="220" src="https://rutube.ru/play/embed/e258a807e5a28978875c47d41d08ca95"
+                        frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen
+                        allowFullScreen></iframe>
+                </div>
+                <div class="tran__video">
+                    <iframe width="330" height="220"
+                        src="https://dzen.ru/embed/vMgUxld7och4?from_block=partner&from=zen&mute=0&autoplay=0&tv=0"
+                        allow="autoplay; fullscreen; accelerometer; gyroscope; picture-in-picture; encrypted-media"
+                        frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+            </div>
+    </section>
+    <section class="mountauns">
+        <div class="container">
+            <div class="mount__content">
+                <div class="mount__title">
+                    <img src="img/Mont/mountains (1) 1.png" alt="">
+                    Познакомим <br>
+                    с горами России
+                </div>
+                <div class="mount__img">
+                    <img class="mount__krai__left" src="img/Mont/1 1.jpg" alt="">
+                    <img src="img/Mont/2 1.jpg" alt="">
+                    <img class="mount__krai" src="img/Mont/3 1.jpg" alt="">
+                </div>
+                <div class="mount__info">
+                    Даем путевки и научим пользоваться: <span>палатки, <br>
+                        спальники, трекпалки </span>
+                </div>
+                <div class="mount__info__mount">
+                    <div class="info__trop">
+                        <div class="trop__title">
+                            Эко-тропы
+                        </div>
+                        <div class="trop__text">
+                            Оборудование маршруты. <br>
+                            Прогулки на пару часов
+                        </div>
+                    </div>
+                    <div class="info__trop troper_ii">
+                        <div class="trop__title">
+                            Треккинг
+                        </div>
+                        <div class="trop__text">
+                            Путешествия с ночевкой. <br>
+                            С нас палатки и гид
+                        </div>
+                    </div>
+                    <div class="info__trop">
+                        <div class="trop__title">
+                            ДГА
+                        </div>
+                        <div class="trop__text">
+                            Детская горная академия. <br>
+                            Программа от 3 дней
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="mount__bth">
+                    <button>Купить</button>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section class="info__rus">
+        <div class="container">
+            <div class="info__rus__content">
+                <div class="info__rus__title">
+                    Расскажем <br>
+                    о природе России
+                </div>
+                <div class="info__rus__cards-wrapper">
+                    <div class="info__rus__cards">
+                        <div class="info__rus__card">
+                            <div class="info__rus__img">
+                                <img src="img/RussiaInfo/i 2.jpg" alt="">
+                            </div>
+                            <div class="info__rus__text">
+                                <span>Удивительная <br> природа России </span> <br>
+                                <p>поражает своим разнообразием и красотой. Эта огромная страна занимает большую часть
+                                    Евразии и простирается от Балтийского моря до Тихого океана. На ее территории можно
+                                    встретить различные климатические зоны, каждый из которых обладает неповторимым
+                                    ландшафтом.</p>
+                            </div>
+                        </div>
+                        <div class="info__rus__card">
+                            <div class="info__rus__img">
+                                <img src="img/RussiaInfo/image 12.jpg" alt="">
+                            </div>
+                            <div class="info__rus__text">
+                                <span>Россия славится <br> своими лесами, </span> <br>
+                                <p>которые покрывают около 45% территории страны. Здесь можно найти хвойные леса Сибири,
+                                    густые лесные массивы Кавказа, а также смешанные и широколиственные леса европейской
+                                    части России.</p>
+                            </div>
+                        </div>
+                        <div class="info__rus__card">
+                            <div class="info__rus__img">
+                                <img src="img/RussiaInfo/image 14.jpg" alt="">
+                            </div>
+                            <div class="info__rus__text">
+                                <span>Одним из самых известных <br> и удивительных </span> <br>
+                                <p>природных объектов России является озеро Байкал. Это самое глубокое и древнее озеро
+                                    на планете, которое содержит около 20% всех мировых запасов пресной воды. Байкал
+                                    славится своей уникальной экосистемой, множеством эндемичных видов рыб и
+                                    млекопитающих, а также завораживающими пейзажами.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__info__rus">
+                    <div class="slider__info__left">
+                        <img src="img/Icon/Polygon 2.png" alt="">
+                    </div>
+                    <div class="slider__info__right">
+                        <img src="img/Icon/Polygon 2.png" alt="">
+                    </div>
+                </div>
+                <div class="info__rus__bolshe">
+                    <a href="https://ru.wikipedia.org/wiki/Россия">Узнать больше -></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bron" id="bron">
+        <div class="container">
+            <div class="bron__content">
+                <div class="bron__title">
+                    ЗАБРОНИРУЙТЕ ТУР СЕЙЧАС!
+                </div>
+                <div class="bron__subtitle">
+                    Выберите поездку и оставьте свои контакты, мы свяжемся с вами и все расскажем
+                </div>
+                <form id="form" class="form__bron">
+                    <select name="trip" required>
+                        <option class="trip__color" value="" disabled selected>Выберите поездку</option>
+                        <option value="Байкал">Байкал</option>
+                        <option value="Алтай">Алтай</option>
+                        <option value="Кавказ">Кавказ</option>
+                    </select>
+                    <input type="date" name="date" required placeholder="Дата поездки">
+                    <input class="koroche" type="text" name="name" required placeholder="Ваше имя">
+                    <input class="koroche" type="email" name="email" required placeholder="Ваша почта">
+                    <input type="tel" name="phone" required placeholder="+7 (999) 999-99-99">
+                    <button type="submit">(+)Забронировать тур</button>
+                </form>
+                <div class="bron__contract">
+                    нажимая кнопку «Забронировать тур», вы соглашаетесь <br>
+                    <a href="#">с Политикой конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="header__logo footer__logo">
+                    <a href="index.html">RUSSIA <br>
+                        TRAVEL</a>
+                </div>
+                <div class="footer__menu">
+                    <div class="prava">
+                        2024 все права защищены
+                    </div>
+                    <div class="politika">
+                        Политика конфиденциальности
+                    </div>
+                    <div class="social">
+                        <a href="https://web.telegram.org"><img src="img/Social/telegram 1.png" alt=""></a>
+                        <a href="https://vk.com"><img src="img/Social/vk-social-network-logo 1.png" alt=""></a>
+                        <a href="https://dzen.ru"><img src="img/Social/icons8-яндекс-был-50 1.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="js/slider.js"> </script>
+    <script src="js/post.js"></script>
+    <script src="js/server.js"></script>
+
+</body>
+
+</html>
