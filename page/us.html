@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="baikal-module.css">
+    <title>RussiaTravel</title>
+</head>
+
+<body>
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <p>Почта:</p>
+                <input placeholder="Введите Email" type="email" id="email" name="email" required>
+                <p>Имя пользователя:</p>
+                <input placeholder="Введите логин" type="text" id="username" name="username" required>
+                <p>Пароль:</p>
+                <input placeholder="Введите пароль" type="password" id="password" name="password" required>
+                <p class="priv__policy__p">
+                    <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                    <span>Вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
+                </p>
+                <button type="submit">Регистрация</button>
+                <p class="evoit"><span>Если у Вас есть аккаунт <a href="#" id="switchToLogin">Войти</a></span></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Войти -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content login__content">
+            <span class="close">&times;</span>
+            <h2>Войти</h2>
+            <form id="loginForm">
+                <p>Почта:</p>
+                <input placeholder="Введите Email" type="email" id="loginEmail" name="email" required>
+                <p>Пароль:</p>
+                <input placeholder="Введите пароль" type="password" id="loginPassword" name="password" required>
+                <button type="submit">Войти</button>
+                <div class="razdelitel">
+                    <a href="#" id="switchToRegister">Регистрация</a>
+                    <a href="#" id="openForgotPasswordModal">Забыл пароль</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Забыл пароль -->
+    <div id="forgotPasswordModal" class="modal">
+        <div class="modal-content login__content">
+            <span class="close">&times;</span>
+            <h2>Новый пароль</h2>
+            <form id="forgotPasswordForm">
+                <p>Почта:</p>
+                <input placeholder="Введите Email" type="email" id="forgotPasswordEmail" name="email" required>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="../index.html">RUSSIA <br>
+                        TRAVEL</a>
+                </div>
+                <div class="header__function">
+                    <div class="header__menu">
+                        <menu class="menu">
+                            <ul>
+                                <li><a href="../index.html">Главная</a></li>
+                                <li><a href="us.html">О нас</a></li>
+                                <li><a href="https://www.aviasales.ru/?params=KUF1" target="_blank">Авиабилеты</a></li>
+                                <li><a href="https://www.tutu.ru/poezda/mini/?utm_source=yandex&utm_medium=cpc&utm_campaign=mrkt_train_rzdTrf&utm_term=ржд%20купить%20билеты&yclid=18325329165334872063"
+                                        target="_blank">Ж/Д
+                                        билеты</a></li>
+                                <li><a href="beatiful.html">Галерея</a></li>
+                                <li><a href="contact.html">Контакты</a></li>
+                            </ul>
+                        </menu>
+                    </div>
+                    <div class="header__auth">
+                        <button id="openRegisterModal">Авторизуйтесь</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="sec__us">
+        <div class="container">
+            <div class="sec__us__content">
+                <div class="russia__title">
+                    О нас
+                </div>
+                <div class="section__us__con">
+                    <div class="sec__us__info">
+                        <div class="sec__us__info__text">
+                            <span>О компании</span> <br>
+                            История RussiaTravel началась в 2004 году. С тех пор компания выросла. Список открытых
+                            направлений постоянно увеличивается, и сегодня наши туристы могут отправиться в любую точку
+                            страны
+                        </div>
+                        <div class="sec__us__info__img">
+                            <img src="../img/Us/image 19 (1).jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sec__us__info">
+                        <div class="sec__us__info__text">
+                            <span>Отели</span> <br>
+                            С RussiaTravel вы всегда найдете идеально подходящий вариант проживания. Огромное количество
+                            отелей, апартаментов и гостевых домов по всей России гарантированно предоставляют места для
+                            наших туристов в любое время.
+                        </div>
+                        <div class="sec__us__info__img">
+                            <img src="../img/Us/i 30.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="sec__us__info">
+                        <div class="sec__us__info__text">
+                            <span>Актуальные направления</span> <br>
+                            RussiaTravel продолжает развиваться и открывать для туристов самые необычные направления,
+                            маршруты и типы отдыха.
+                        </div>
+                        <div class="sec__us__info__img">
+                            <img src="../img/Us/i 31.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="tur__us__bth">
+                    <a href="../index.html#popular__tur">к турам</a>
+                </div>
+                <div class="us__otz__poezdka">
+                    <div class="bth__slider" id="prevBtn">
+                        <img src="../img/Icon/Button - Previous.png" alt="Previous">
+                    </div>
+                    <div class="us__otz__poezdka__wrapper">
+                        <div class="us__otz__poezdka__contents">
+                            <div class="us__otz__poezdka__content__card">
+                                <div class="us__otz__poezdka__content__text">
+                                    Надежное турагентство, менеджер Нина подберёт любой тур в любую страну, на любой бюджет! Умеет слышать клиента, ориентирована по странам и отелям! Рекомендую!
+                                </div>
+                                <div class="us__otz__poezdka__info">
+                                    <div class="us__otz__poezdka__info__img">
+                                        <img src="../img/Icon/Background.png" alt="">
+                                    </div>
+                                    <div class="us__otz__poezdka__info__text">
+                                        <div class="us__otz__poezdka__info__text__name">Юля</div>
+                                        <div class="us__otz__poezdka__info__text__date">22.01.2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="us__otz__poezdka__content__card">
+                                <div class="us__otz__poezdka__content__text">
+                                    Это был мой первый опыт путешествия с туристическим агентством и я остался очень доволен. Обязательно обращусь к вам и в следующий раз!                                </div>
+                                <div class="us__otz__poezdka__info">
+                                    <div class="us__otz__poezdka__info__img">
+                                        <img src="../img/Icon/Background.png" alt="">
+                                    </div>
+                                    <div class="us__otz__poezdka__info__text">
+                                        <div class="us__otz__poezdka__info__text__name">Рита</div>
+                                        <div class="us__otz__poezdka__info__text__date">12.05.2024</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="us__otz__poezdka__content__card">
+                                <div class="us__otz__poezdka__content__text">
+                                    Сотрудники агентства были очень внимательны к моим потребностям и пожеланиям. Отпуск прошел на высшем уровне, а цена за все меня приятно удивила.                                </div>
+                                <div class="us__otz__poezdka__info">
+                                    <div class="us__otz__poezdka__info__img">
+                                        <img src="../img/Icon/Background.png" alt="">
+                                    </div>
+                                    <div class="us__otz__poezdka__info__text">
+                                        <div class="us__otz__poezdka__info__text__name">Людмила</div>
+                                        <div class="us__otz__poezdka__info__text__date">11.04.2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="us__otz__poezdka__content__card">
+                                <div class="us__otz__poezdka__content__text">
+                                    Все экскурсии были интересными и информативными. Благодарю сотрудников фирмы за рекомендации и помощь в организации тура.
+                                </div>
+                                <div class="us__otz__poezdka__info">
+                                    <div class="us__otz__poezdka__info__img">
+                                        <img src="../img/Icon/Background.png" alt="">
+                                    </div>
+                                    <div class="us__otz__poezdka__info__text">
+                                        <div class="us__otz__poezdka__info__text__name">Адель</div>
+                                        <div class="us__otz__poezdka__info__text__date">03.06.2024</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="us__otz__poezdka__content__card">
+                                <div class="us__otz__poezdka__content__text">
+                                    Сотрудники агентства были готовы помочь мне в любой ситуации, связанной с моей поездкой. Всегда на связи, решали любые проблемы.
+                                </div>
+                                <div class="us__otz__poezdka__info">
+                                    <div class="us__otz__poezdka__info__img">
+                                        <img src="../img/Icon/Background.png" alt="">
+                                    </div>
+                                    <div class="us__otz__poezdka__info__text">
+                                        <div class="us__otz__poezdka__info__text__name">Вадим</div>
+                                        <div class="us__otz__poezdka__info__text__date">30.01.2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Добавьте другие карточки аналогично -->
+                        </div>
+                    </div>
+                    <div class="bth__slider" id="nextBtn">
+                        <img src="../img/Icon/Button - Next.png" alt="Next">
+                    </div>
+                </div>     
+            </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__content__menu">
+                    <div class="header__logo footer__logo">
+                        <a href="index.html">RUSSIA <br>
+                            TRAVEL</a>
+                    </div>
+                    <div class="footer__content__menu__li">
+                        <menu class="menu">
+                            <ul>
+                                <li><a href="../index.html">Главная</a></li>
+                                <li><a href="us.html">О нас</a></li>
+                                <li><a href="https://www.aviasales.ru/?params=KUF1" target="_blank">Авиабилеты</a></li>
+                                <li><a
+                                        href="https://www.tutu.ru/poezda/mini/?utm_source=yandex&utm_medium=cpc&utm_campaign=mrkt_train_rzdTrf&utm_term=ржд%20купить%20билеты&yclid=18325329165334872063" target="_blank">Ж/Д
+                                        билеты</a></li>
+                                <li><a href="beatiful.html">Галерея</a></li>
+                                <li><a href="contact.html">Контакты</a></li>
+                            </ul>
+                        </menu>
+                    </div>
+                </div>
+
+                <div class="footer__menu">
+                    <div class="prava">
+                        2024 все права защищены
+                    </div>
+                    <div class="politika">
+                        Политика конфиденциальности
+                    </div>
+                    <div class="social">
+                        <a href="https://web.telegram.org"><img src="../img/Social/telegram 1.png" alt=""></a>
+                        <a href="https://vk.com"><img src="../img/Social/vk-social-network-logo 1.png" alt=""></a>
+                        <a href="https://dzen.ru"><img src="../img/Social/icons8-яндекс-был-50 1.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const contents = document.querySelector('.us__otz__poezdka__contents');
+const cards = document.querySelectorAll('.us__otz__poezdka__content__card');
+
+let currentIndex = 0;
+const totalCards = cards.length;
+const visibleCards = Math.floor(contents.offsetWidth / (cards[0].offsetWidth + 20)); // Определяем количество видимых карточек
+
+function updateSlider() {
+    const offset = -currentIndex * (cards[0].offsetWidth + 20); // 20px это margin между карточками
+    contents.style.transform = `translateX(${offset}px)`;
+}
+
+prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex -= visibleCards;
+        if (currentIndex < 0) {
+            currentIndex = 0;
+        }
+        updateSlider();
+    }
+});
+
+nextBtn.addEventListener('click', () => {
+    if (currentIndex + visibleCards < totalCards) {
+        currentIndex += visibleCards;
+        if (currentIndex + visibleCards > totalCards) {
+            currentIndex = totalCards - visibleCards;
+        }
+        updateSlider();
+    }
+});
+
+updateSlider();
+    </script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

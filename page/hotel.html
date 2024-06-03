@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="baikal-module.css">
+    <title>RussiaTravel</title>
+</head>
+
+<body>
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <p>Почта:</p>
+                <input placeholder="Введите Email" type="email" id="email" name="email" required>
+                <p>Имя пользователя:</p>
+                <input placeholder="Введите логин" type="text" id="username" name="username" required>
+                <p>Пароль:</p>
+                <input placeholder="Введите пароль" type="password" id="password" name="password" required>
+                <p class="priv__policy__p">
+                    <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                    <span>Вы соглашаетесь с <a href="#">политикой конфиденциальности</a></span>
+                </p>
+                <button type="submit">Регистрация</button>
+                <p class="evoit"><span>Если у Вас есть аккаунт <a href="#" id="switchToLogin">Войти</a></span></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content login__content">
+            <span class="close">&times;</span>
+            <h2>Войти</h2>
+            <form id="loginForm">
+                <p>Почта:</p>
+                <input placeholder="Введите Email" type="email" id="loginEmail" name="email" required>
+                <p>Пароль:</p>
+                <input placeholder="Введите пароль" type="password" id="loginPassword" name="password" required>
+                <button type="submit">Войти</button>
+                <div class="razdelitel">
+                    <a href="#" id="switchToRegister">Регистрация</a>
+                    <a href="#" id="openForgotPasswordModal">Забыл пароль</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="forgotPasswordModal" class="modal">
+        <div class="modal-content login__content">
+            <span class="close">&times;</span>
+            <h2>Новый пароль</h2>
+            <form id="forgotPasswordForm">
+                <p>Почта:</p>
+                <input placeholder="Введите Email" type="email" id="forgotPasswordEmail" name="email" required>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="../index.html">RUSSIA <br> TRAVEL</a>
+                </div>
+                <div class="header__function">
+                    <div class="header__menu">
+                        <menu class="menu">
+                            <ul>
+                                <li><a href="../index.html">Главная</a></li>
+                                <li><a href="us.html">О нас</a></li>
+                                <li><a href="https://www.aviasales.ru/?params=KUF1" target="_blank">Авиабилеты</a></li>
+                                <li><a href="https://www.tutu.ru/poezda/mini/?utm_source=yandex&utm_medium=cpc&utm_campaign=mrkt_train_rzdTrf&utm_term=ржд%20купить%20билеты&yclid=18325329165334872063"
+                                        target="_blank">Ж/Д билеты</a></li>
+                                <li><a href="beatiful.html">Галерея</a></li>
+                                <li><a href="contact.html">Контакты</a></li>
+                            </ul>
+                        </menu>
+                    </div>
+                    <div class="header__auth">
+                        <button id="openRegisterModal">Авторизуйтесь</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hotel__view">
+        <div class="container">
+            <div class="hotel__view__odz__con">
+                <div class="hotel__view__content">
+                    <div class="hotel__view__content__left">
+                        <div class="hotel__view__title">
+                            3 ★ Гостиница Алтай
+                        </div>
+                        <div class="hotel__view__address">
+                            <img src="../img/Icon/Map Pin (1).png" alt=""> Проспект Ленина 24, г. Барнаул
+                        </div>
+                        <div class="hotel__view__img">
+                            <div class="hotel__view__left__img">
+                                <img src="https://photo.hotellook.com/image_v2/crop/8678065976/1280/960.auto"
+                                    alt="" class="thumbnail">
+                            </div>
+                            <div class="hotel__view__right__imgs">
+                                <img src="https://photo.hotellook.com/image_v2/crop/8678065983/1280/960.auto"
+                                    alt="" class="thumbnail">
+                                <img src="https://photo.hotellook.com/image_v2/crop/8678065992/1280/960.auto"
+                                    alt="" class="thumbnail">
+                                <img src="https://photo.hotellook.com/image_v2/crop/8678065997/1280/960.auto"
+                                    alt="" class="thumbnail">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotel__view__content__right">
+                        <div class="hotel__view__uslugi">
+                            <span>★ Парковка</span> <br>
+                            <span>★ WI-FI</span> <br>
+                            <span>★ Прачечная</span> <br>
+                            <span>★ Уборка номеров</span> <br>
+                            <span>★ Трансфер</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel__bron__view">
+                    <div class="hotel__view__opis">
+                        <div class="hotel__view__opis__title">
+                            Описание
+                        </div>
+                        <div class="hotel__view__opis__text">
+                            3-звездочный Гостиница Алтай предлагает комфорт и удобства, независимо от того, приехали вы
+                            в Барнаул по делам или на отдых. Отель предлагает широкий спектр услуг и удобств, с целью
+                            предложить гостям первоклассный отдых. В отеле вы можете воспользоваться такими услугами,
+                            как бесплатный Wi-Fi во всех номерах, круглосуточная стойка регистрации, срочный
+                            въезд/выезд, камера хранения багажа, парковка, благодаря которым, вы сможете отлично
+                            отдохнуть. Все номера элегантно обставлены мебелью и оснащены необходимыми удобствами. Отель
+                            предлагает широкий спектр услуг для отдыха. Гостиница Алтай сочетает в себе гостеприимство с
+                            прекрасной атмосферой, что сделает ваше пребывание в Барнаул незабываемым.
+                        </div>
+                    </div>
+                    <div class="hotel__view__bron">
+                        <script async
+                            src="https://tp.media/content?currency=rub&trs=323036&shmarker=548446&show_hotels=true&powered_by=true&locale=ru&searchUrl=search.hotellook.com&primary_override=%23FF8E01&color_button=%23FF8E01&color_icons=%23FF8E01&secondary=%23FFFFFF&dark=%23262626&light=%23FFFFFF&special=%23C4C4C4&color_focused=%23FF8E01&border_radius=5&plain=false&promo_id=7873&campaign_id=101"
+                            charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__content__menu">
+                    <div class="header__logo footer__logo">
+                        <a href="index.html">RUSSIA <br>
+                            TRAVEL</a>
+                    </div>
+                    <div class="footer__content__menu__li">
+                        <menu class="menu">
+                            <ul>
+                                <li><a href="../index.html">Главная</a></li>
+                                <li><a href="us.html">О нас</a></li>
+                                <li><a href="https://www.aviasales.ru/?params=KUF1" target="_blank">Авиабилеты</a></li>
+                                <li><a
+                                        href="https://www.tutu.ru/poezda/mini/?utm_source=yandex&utm_medium=cpc&utm_campaign=mrkt_train_rzdTrf&utm_term=ржд%20купить%20билеты&yclid=18325329165334872063" target="_blank">Ж/Д
+                                        билеты</a></li>
+                                <li><a href="beatiful.html">Галерея</a></li>
+                                <li><a href="contact.html">Контакты</a></li>
+                            </ul>
+                        </menu>
+                    </div>
+                </div>
+
+                <div class="footer__menu">
+                    <div class="prava">
+                        2024 все права защищены
+                    </div>
+                    <div class="politika">
+                        Политика конфиденциальности
+                    </div>
+                    <div class="social">
+                        <a href="https://web.telegram.org"><img src="../img/Social/telegram 1.png" alt=""></a>
+                        <a href="https://vk.com"><img src="../img/Social/vk-social-network-logo 1.png" alt=""></a>
+                        <a href="https://dzen.ru"><img src="../img/Social/icons8-яндекс-был-50 1.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightboxImage">
+        <div class="lightbox-controls">
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
+        </div>
+    </div>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            // Modal functionality
+            const modals = document.querySelectorAll(".modal");
+            const openRegisterModal = document.getElementById("openRegisterModal");
+            const closeButtons = document.querySelectorAll(".close");
+
+            openRegisterModal.addEventListener("click", function () {
+                document.getElementById("registerModal").style.display = "block";
+            });
+
+            closeButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    modals.forEach(modal => modal.style.display = "none");
+                });
+            });
+
+            window.addEventListener("click", function (event) {
+                if (event.target.classList.contains("modal")) {
+                    modals.forEach(modal => modal.style.display = "none");
+                }
+            });
+
+            // Lightbox functionality
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImage = document.getElementById("lightboxImage");
+            const thumbnails = document.querySelectorAll(".thumbnail");
+            const closeLightbox = document.querySelector(".close-lightbox");
+            const prevButton = document.getElementById("prev");
+            const nextButton = document.getElementById("next");
+            let currentImageIndex = 0;
+
+            const images = Array.from(thumbnails).map(thumbnail => thumbnail.src);
+
+            thumbnails.forEach((thumbnail, index) => {
+                thumbnail.addEventListener("click", function () {
+                    lightbox.style.display = "flex";
+                    lightboxImage.src = this.src;
+                    currentImageIndex = index;
+                });
+            });
+
+            closeLightbox.addEventListener("click", function () {
+                lightbox.style.display = "none";
+            });
+
+            prevButton.addEventListener("click", function () {
+                currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                lightboxImage.src = images[currentImageIndex];
+            });
+
+            nextButton.addEventListener("click", function () {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                lightboxImage.src = images[currentImageIndex];
+            });
+
+            window.addEventListener("click", function (event) {
+                if (event.target == lightbox) {
+                    lightbox.style.display = "none";
+                }
+            });
+        });
+    </script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
