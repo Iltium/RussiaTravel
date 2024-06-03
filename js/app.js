@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let isHeaderVisible = true; // Видимость header
 
     const slideTexts = [
-        'Visit <br> to <br> Russia', // Текст для слайда 1
+        'Visit <br> tо <br> Russia', // Текст для слайда 1
         'Добро пожаловать <br> в <br> Россию', // Текст для слайда 2
         'Рәхим <br> итегез <br> Роccияга' // Текст для слайда 3
     ];
